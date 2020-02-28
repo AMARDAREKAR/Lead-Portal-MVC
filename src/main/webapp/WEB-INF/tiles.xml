@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	<definition name="login" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	<definition name="logout" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/logout.jsp" />
+	</definition>
+	<definition name="error page" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="title" value="Error Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/error.jsp" />
+	</definition>
+
+
+
+	<definition name="updateLeadPageForAgent" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/jsp/agent/agentmenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/agent/updateLeadPageForAgent.jsp" />
+	</definition>
+	<definition name="addnewlead" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/agent/agentmenu.jsp" />
+		<put-attribute name="title" value="Add New Lead" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/agent/addnewlead.jsp" />
+	</definition>
+	<definition name="AgentLogin" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/agent/agentmenu.jsp" />
+		<put-attribute name="title" value="Hello AGENT" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/agent/agentlogin.jsp" />
+	</definition>
+	<definition name="changeagentpassword"
+		extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/agent/agentmenu.jsp" />
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/agent/changeagentpassword.jsp" />
+	</definition>
+
+
+
+
+	<definition name="employeeManagementPageForBDM" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/jsp/bdm/bdmmenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/bdm/employeeManagementPageForBDM.jsp" />
+	</definition>
+	<definition name="changebdmpassword"
+		extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/bdm/bdmmenu.jsp" />
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/bdm/changebdmpassword.jsp" />
+	</definition>
+	<definition name="changebdmpassword"
+		extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/bdm/bdmmenu.jsp" />
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/bdm/changebdmpassword.jsp" />
+	</definition>
+	<definition name="addnewproject" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/bdm/bdmmenu.jsp" />
+		<put-attribute name="title" value="Add New Campaign" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/bdm/addnewproject.jsp" />
+	</definition>
+	<definition name="updateEmployeeByBDM"
+		extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/bdm/bdmmenu.jsp" />
+		<put-attribute name="title" value="Update Employee" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/bdm/updateemployee.jsp" />
+	</definition>
+	<definition name="BDMLogin" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/bdm/bdmmenu.jsp" />
+		<put-attribute name="title" value="BDM Login" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/bdm/bdmlogin.jsp" />
+	</definition>
+
+
+
+
+	<definition name="TeamLeaderLogin" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/teamleader/teamleadermenu.jsp" />
+		<put-attribute name="title" value="Hello TeamLeader" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/teamleader/teamleaderlogin.jsp" />
+	</definition>
+	<definition name="AddNewUserTL" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/teamleader/teamleadermenu.jsp" />
+		<put-attribute name="title" value="Add New User" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/teamleader/addnewuser.jsp" />
+	</definition>
+	<definition name="changeteamleaderpassword"
+		extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/teamleader/teamleadermenu.jsp" />
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/teamleader/changeteamleaderpassword.jsp" />
+	</definition>
+	<definition name="updateLeadByTL" extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/teamleader/teamleadermenu.jsp" />
+		<put-attribute name="title" value="Update Lead" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/teamleader/modifylead.jsp" />
+	</definition>
+	<definition name="updateEmployeeByTL"
+		extends="base.definition">
+		<put-attribute name="menu"
+			value="/WEB-INF/jsp/teamleader/teamleadermenu.jsp" />
+		<put-attribute name="title" value="Update Employee" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/teamleader/updateemployee.jsp" />
+	</definition>
+</tiles-definitions>  
